@@ -1,21 +1,11 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
-import MotionWrapper from "../components/MotionWrapper";
-
 const About = () => {
   return (
-    <section className="py-20 px-4 bg-gray-800 text-white text-center">
-      <MotionWrapper>
-        <h2 className="text-3xl font-bold mb-6 text-cyan-400">Sobre mim</h2>
-      </MotionWrapper>
-      <p className="max-w-2xl mx-auto text-gray-300 mb-10">
-        Sou um desenvolvedor front-end júnior com experiência em criar aplicações modernas com React, JavaScript, HTML5 e CSS3. Gosto de transformar ideias em experiências visuais funcionais.
+    <section id="about" className="bg-gray-100 dark:bg-zinc-900 py-16 px-6 rounded-xl shadow-inner">
+      <h2 className="text-3xl font-bold mb-6">Sobre mim</h2>
+      <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        Sou um desenvolvedor front-end júnior com foco em React, apaixonado por criar interfaces modernas,
+        responsivas e com boa usabilidade. Estou sempre estudando para evoluir minhas habilidades e construir soluções que realmente entreguem valor.
       </p>
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 justify-items-center text-4xl text-cyan-400">
-      <FaHtml5 title="HTML5" />
-      <FaCss3Alt title="CSS3" />
-      <FaJs title="JavaScript" />
-      <FaReact title="React" />
-    </div>
     </section>
   );
 };

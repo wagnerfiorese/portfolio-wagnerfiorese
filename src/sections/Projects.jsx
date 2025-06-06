@@ -1,42 +1,31 @@
-const projects = [
-  {
-    title: "Habit",
-    description: "App para monitoramento de hábitos com React.",
-    image: "https://via.placeholder.com/300x180?text=Habit",
-    link: "https://github.com/seu-usuario/habit",
-  },
-  {
-    title: "ToDo List",
-    description: "Lista de tarefas com salvamento local.",
-    image: "https://via.placeholder.com/300x180?text=ToDo+List",
-    link: "https://github.com/seu-usuario/todolist",
-  },
-];
+import ProjectCard from "../components/projectCard";
+import habitImagem from "../assets/habit.webp";
+import imbueShrine from "../assets/imbuing_Shrine.gif";
 
 const Projects = () => {
+  const projectList = [
+    {
+      title: "Habit",
+      description: "App de rastreamento de hábitos feito com React, Firebase e animações com Framer Motion.",
+      techs: ["React", "Tailwind", "Firebase"],
+      link: "https://github.com/wagnerfiorese/habit",
+      image: habitImagem,
+    },
+    {
+      title: "Imbuements Calculator",
+      description: "Ferramenta de cálculo de imbuements do jogo Tibia, feita com React.",
+      techs: ["React"],
+      link: "https://github.com/wagnerfiorese/imbuements-calculator",
+      image: imbueShrine,
+    },
+  ];
+
   return (
-    <section id="projects" className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto px-4">
-      <h2 className="text-2xl md:text-3xl font-bold mb-6 text-cyan-400">Projetos</h2>
-      <div className="grid gap-8 md:grid-cols-2 max-w-6xl mx-auto">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-gray-800 rounded-xl overflow-hidden shadow-lg"
-          >
-            <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-            <div className="p-6">
-              <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-gray-300">{project.description}</p>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4 text-cyan-400 hover:underline"
-              >
-                Ver no GitHub
-              </a>
-            </div>
-          </div>
+    <section id="projects" className="py-16 px-4 max-w-screen-xl mx-auto text-center">
+      <h2 className="text-3xl font-bold mb-6">Projetos em destaque</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {projectList.map((project, index) => (
+          <ProjectCard key={index} {...project} /> 
         ))}
       </div>
     </section>
