@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-16 px-4 max-w-screen-md mx-auto text-center">
       <h2 className="text-3xl font-bold mb-6">Contato</h2>
-      <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-lg text-gray-600 text-gray-300 mb-6">
         Quer conversar ou saber mais? Me envie uma mensagem!
       </p>
       <a

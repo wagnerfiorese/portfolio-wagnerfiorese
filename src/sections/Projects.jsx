@@ -18,15 +18,52 @@ const Projects = () => {
       link: "https://github.com/wagnerfiorese/imbuements-calculator",
       image: imbueShrine,
     },
+    {
+      title: "Imbuements Calculator",
+      description: "Ferramenta de cálculo de imbuements do jogo Tibia, feita com React.",
+      techs: ["React"],
+      link: "https://github.com/wagnerfiorese/imbuements-calculator",
+      image: imbueShrine,
+    },
+    {
+      title: "Imbuements Calculator",
+      description: "Ferramenta de cálculo de imbuements do jogo Tibia, feita com React.",
+      techs: ["React"],
+      link: "https://github.com/wagnerfiorese/imbuements-calculator",
+      image: imbueShrine,
+    },
+        {
+      title: "Imbuements Calculator",
+      description: "Ferramenta de cálculo de imbuements do jogo Tibia, feita com React.",
+      techs: ["React"],
+      link: "https://github.com/wagnerfiorese/imbuements-calculator",
+      image: imbueShrine,
+    },
+        {
+      title: "Imbuements Calculator",
+      description: "Ferramenta de cálculo de imbuements do jogo Tibia, feita com React.",
+      techs: ["React"],
+      link: "https://github.com/wagnerfiorese/imbuements-calculator",
+      image: imbueShrine,
+    },
+        {
+      title: "Imbuements Calculator",
+      description: "Ferramenta de cálculo de imbuements do jogo Tibia, feita com React.",
+      techs: ["React"],
+      link: "https://github.com/wagnerfiorese/imbuements-calculator",
+      image: imbueShrine,
+    },
   ];
 
   return (
     <section id="projects" className="py-16 px-4 max-w-screen-xl mx-auto text-center">
-      <h2 className="text-3xl font-bold mb-6">Projetos em destaque</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {projectList.map((project, index) => (
-          <ProjectCard key={index} {...project} /> 
-        ))}
+      <h2 className="text-3xl font-bold mb-6">Projetos</h2>
+      <div className="overflow-x-auto">
+        <div className="flex overflow-x-auto gap-4 py-4 px-2">
+          {projectList.map((project, index) => (
+            <ProjectCard key={index} {...project} />
+          ))}
+        </div>
       </div>
     </section>
   );
